@@ -1,9 +1,15 @@
 
 use std::time::{Duration, Instant}; //SystemTime , Instant
 use std::thread::sleep;
+use columns::Columns::test;
+//use structs::structs::new_vec2d;
 
 fn main () {
-    check()
+
+    // let test =  new_vec2d(3 as f32, 4 as f32);
+    // println!("{:#?}", test);
+    check();
+    //test()
 }
 
 pub fn check() {

@@ -1,9 +1,15 @@
 [package]
-name = "rustBirds"
+name = "Flappy_Birds"
 version = "0.1.0"
 authors = ["Ficus <pogasiid@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+#name = "structs"
+#path = "src/Structs/src/lib.rs"
+name = "columns"
+path = "src/Columns/src/lib.rs"
 
 [dependencies]
