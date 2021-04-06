@@ -1,5 +1,5 @@
 [package]
-name = "Columns"
+name = "columns"
 version = "0.1.0"
 authors = ["Ficus <pogasiid@gmail.com>"]
 edition = "2018"
@@ -8,3 +8,7 @@ edition = "2018"
 
 
 [dependencies]
+structs = { path = "../Structs" }
+
+#structs = { git = "https://github.com/Pohasii/FlappyBirds/tree/main/src/Structs" }
+
