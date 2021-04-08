@@ -1,5 +1,5 @@
 pub mod size {
-
+    #[derive(Debug)]
     pub struct Model {
         pub width: f32,
         pub height: f32,

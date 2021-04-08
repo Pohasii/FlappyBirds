@@ -1,7 +1,7 @@
 
 pub mod vec2d {
 
-    #[derive(Debug)]
+    #[derive(Debug, Copy, Clone)]
     pub struct Model {
         pub x: f32,
         pub y: f32,
