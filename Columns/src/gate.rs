@@ -10,14 +10,16 @@ pub mod gate {
         pub width: f32,
         pub height: f32,
         pub id: f64,
+        pub walls: Vec<wall::Model>
     }
 
     pub fn new_gate(x:f32, y:f32, width:f32, height:f32, id:f64) -> Model {
-        Model {
+        Model{
             point: vec2d::new_vec2d(x, y),
             width,
             height,
             id,
+            walls: Vec::new()
         }
     }
 
@@ -73,6 +75,40 @@ pub mod gate {
 
             pub fn set_max(&mut self, max: f32) {
                 self.max = max
+            }
+        }
+    }
+
+    pub mod wall {
+
+        use structs::structs::*;
+
+        #[derive(Debug)]
+        pub struct Model {
+            pub first: vec2d::Model,
+            pub second: vec2d::Model,
+        }
+
+        pub fn new(first: vec2d::Model, second: vec2d::Model) -> Model {
+            Model{ first, second }
+        }
+
+        impl Model {
+
+            pub fn get_first_point (&self) -> vec2d::Model {
+                self.first.clone()
+            }
+
+            pub fn get_second_point (&self) -> vec2d::Model {
+                self.second.clone()
+            }
+
+            pub fn set_first_point (&mut self, point: vec2d::Model) {
+                self.first = point
+            }
+
+            pub fn set_second_point (&mut self, point: vec2d::Model) {
+                self.second = point
             }
         }
     }

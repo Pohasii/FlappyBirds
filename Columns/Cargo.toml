@@ -10,6 +10,7 @@ edition = "2018"
 [dependencies]
 structs = { path = "../Structs" }
 rand = "0.8.3"
+parry2d = "0.3.0"
 
 #structs = { git = "https://github.com/Pohasii/FlappyBirds/tree/main/src/Structs" }
 

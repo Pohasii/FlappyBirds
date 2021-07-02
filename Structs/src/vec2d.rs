@@ -39,6 +39,49 @@ pub mod vec2d {
     }
 }
 
+// pub mod vector {
+//
+//     use num::Num;
+//
+//     #[derive(Debug, Copy, Clone)]
+//     pub struct Point<T: Num> {
+//         x: T,
+//         y: T,
+//     }
+//
+//     pub fn new_point<T: Num>(x: T, y: T) -> Point<T> {
+//         Point { x, y }
+//     }
+//
+//     impl<T> Point<T> where T: Num
+//     {
+//         pub fn get_x(&self) -> T {
+//             self.x
+//         }
+//
+//         pub fn get_y(&self) -> T {
+//             self.y
+//         }
+//
+//         pub fn get_xy(&self) -> (T, T) {
+//             (self.get_x(), self.get_y())
+//         }
+//
+//         pub fn set_x(&mut self, x: T) {
+//             self.x = x
+//         }
+//
+//         pub fn set_y(&mut self, y: T) {
+//             self.y = y
+//         }
+//
+//         pub fn set_xy(&mut self, xy: (T, T)) {
+//             self.set_x(xy.0);
+//             self.set_y(xy.1);
+//         }
+//     }
+// }
+
 #[cfg(test)]
 mod tests {
 
